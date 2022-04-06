@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 const Main = styled.main`
   max-width: 1240px;
-  margin: auto;
+  margin-left: 15rem;
   a {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     color: red;
@@ -14,7 +14,7 @@ const Main = styled.main`
 `;
 
 const Title = styled.h2`
-  margin: 1em 0em;
+  margin: 4rem 0rem;
 `;
 
 const Home = () => {
