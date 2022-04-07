@@ -29,5 +29,5 @@ import styled from "styled-components";
   }
 `;
 
-export {Head, Nav};
+export  {Head,Nav};
 
