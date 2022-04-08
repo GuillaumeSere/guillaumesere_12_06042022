@@ -2,9 +2,9 @@ import axios from "axios";
 
 
 /**
- * Retrieve user activity
+ * Get user activity
  * @param {string} id
- * @returns {Array}
+ * @returns {object} 
  */
  export const getUserActivity = async (id) => {
     try {

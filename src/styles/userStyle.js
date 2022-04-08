@@ -13,6 +13,9 @@ const Container = styled.div`
   width: 100%;
   margin: auto;
   margin-top: 2%;
+  @media (max-width: 1430px){
+      margin-left: 1rem;
+  }
 `;
 
 const Content = styled.div`

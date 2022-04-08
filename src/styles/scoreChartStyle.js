@@ -4,7 +4,7 @@ const Container = styled.div`
 position: relative;
 width: 258px;
 height: 263px;
-background: #f2f2f2ab;
+background: #FBFBFB;
 border-radius: 5px;
 `;
 

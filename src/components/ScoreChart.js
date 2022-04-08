@@ -30,7 +30,7 @@ function ScoreChart({ data }) {
               index === 0 ? (
                 <Cell key={`cell-${index}`} cornerRadius={10} fill="#ff0000" />
               ) : (
-                <Cell key={`cell-${index}`} fill="#f2f2f2ab" />
+                <Cell key={`cell-${index}`} fill="#FBFBFB" />
               )
             )}
           </Pie>

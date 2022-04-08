@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 	height: 320px;
     width: 835px;
 	border-radius: 5px;
-    background: #f2f2f2ab;
+    background: #FBFBFB;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
 	padding: 25px;
 	
@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const Head = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2.5rem;
 	`
 
 const Title= styled.h2`
