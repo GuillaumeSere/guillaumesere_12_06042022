@@ -50,14 +50,14 @@ function UserAverageSessions() {
     <Container>
       <Title>Durée moyenne des sessions</Title>
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} strokeWidth={0}>
+        <LineChart data={data} strokeWidth={1} >
           <XAxis
             type="category"
             dataKey="day"
-            tickLine={false}
-            stroke="white"
+            tickLine={true}
+            stroke="red"
             padding={{right:10, left:10}}
-            tick={{ fontSize: 14, stroke: "rgba(255, 255, 255, 0.7)" }}
+            tick={{ fontSize: 13, stroke: "white", opacity: 0.8}}
           />
           <YAxis
             dataKey="sessionLength"
