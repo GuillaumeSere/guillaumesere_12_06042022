@@ -9,6 +9,8 @@
 - [npm](https://www.npmjs.com/)
 - [yarn](https://yarnpkg.com/getting-started/install)
 
+## Installer et exécuter le projet
+
 ### `Installation et lancement du _back-end_`
 
 - Cloner le repo du _back-end_ : `git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git`
