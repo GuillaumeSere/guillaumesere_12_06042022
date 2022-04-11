@@ -299,7 +299,7 @@ export const getUserActivity = async (id) => {
  * @param {string} id User id
  * @returns {object} Response
  */
-export const getAverageSessions = async (id) => {
+export const getUserAverageSessions = async (id) => {
 	try {
 		const res = USER_AVERAGE_SESSIONS.find((el) => el.userId == id);
 		return {data:res};

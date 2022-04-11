@@ -28,7 +28,7 @@ function UserActivity() {
 	if (data.length === 0) return null;
 	//format data.day
 	for (let i = 0 ; i < data.length ; i ++){data[i].day = i + 1;}
-	//console.log(data)
+    
     return (  
         <Wrapper>
             <Head>

@@ -19,5 +19,14 @@
     margin: 0;
     padding: 0;
   }
+
+  ::-webkit-scrollbar{
+      width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+      background: black;
+      border-radius: .5rem;
+  }
   
  

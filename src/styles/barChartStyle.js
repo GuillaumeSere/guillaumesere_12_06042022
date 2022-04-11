@@ -17,6 +17,7 @@ const Head = styled.div`
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.5rem;
+    margin-right: 1.5rem;
 	`
 
 const Title= styled.h2`

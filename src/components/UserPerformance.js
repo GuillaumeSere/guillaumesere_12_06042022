@@ -42,8 +42,6 @@ function UserPerformance() {
 	}, [id]);
 	if (data.length === 0) return null;
 	
-	//console.log(data)
-
     return ( 
     <Container>
             <ResponsiveContainer width="100%" height="100%">

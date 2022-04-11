@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 /**
- * Get user activity
+ * Get User activity
  * @param {string} id
  * @returns {object} 
  */
