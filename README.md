@@ -24,7 +24,7 @@
 - Lancer le _front-end_ sur le port 3001 : `npm start`
 
 Les 2 URL disponibles (pour les 2 utilisateurs) sont :
- - http://localhost:3001/user/12
- - http://localhost:3001/user/18
+ - http://localhost:3001/guillaumesere_12_06042022/user/12
+ - http://localhost:3001/guillaumesere_12_06042022/user/18
 
 
