@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Text} from "../styles/sessionsToolTypeStyle"
+import {Container, Text} from "../styles/sessionsToolTypeStyle";
 import PropTypes from "prop-types";
 
 export default function SessionsToolType({ active, payload }) {
