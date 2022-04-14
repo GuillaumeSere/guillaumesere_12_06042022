@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Title } from "../styles/userAverageSessionStyle";
-import { getData } from '../utils/getData';
+import { getUserAverageSessions } from "../utils/data";
 import { useParams } from "react-router";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import SessionsToolType from "./SessionsToolType.js";
@@ -17,8 +17,8 @@ import SessionsToolType from "./SessionsToolType.js";
   const { id } = useParams();
 
   useEffect(() => {
-    const getAverageSessions = async () => {
-      const request = await getData("USER_AVERAGE_SESSIONS",id);
+    const getData = async () => {
+      const request = await getUserAverageSessions(id);
       if (!request) return alert("data error");
       const formatData = request.data.sessions.map((data) => {
           
@@ -43,7 +43,7 @@ import SessionsToolType from "./SessionsToolType.js";
       });
       setData(formatData);
     };
-    getAverageSessions();
+    getData();
   }, [id]);
   if (data.length === 0) return null;
 

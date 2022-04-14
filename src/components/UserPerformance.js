@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { Container } from "../styles/userPerformanceStyle";
-import { getData } from '../utils/getData';
+import { getUserPerformance } from "../utils/data";
 import { useParams } from 'react-router';
 import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "recharts";
 
@@ -16,11 +16,11 @@ import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "rec
 	const {id} = useParams();
 
     useEffect(() => {
-		const getPerformance = async () => {
-			const request = await getData("USER_PERFORMANCE",id);
+		const getData = async () => {
+			const request = await getUserPerformance(id);
 			if (!request) return alert('data error');
 			const formatData = request.data.data.map((data) => {
-
+                
 				switch (data.kind) {
 					case 1:
 						return { ...data, kind: 'Cardio' };
@@ -40,7 +40,7 @@ import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "rec
 			});
 			setData(formatData);
 		};
-		getPerformance();
+		getData();
 	}, [id]);
 	if (data.length === 0) return null;
 	
