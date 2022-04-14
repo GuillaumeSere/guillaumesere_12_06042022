@@ -8,7 +8,8 @@ import PropTypes from "prop-types";
  * @param  {object} {data}
  * @return {JSX}
  */
-function ScoreChart({ data }) {
+ export default function ScoreChart({ data }) {
+     
   const score = [
     { value: data.todayScore || data.score },
     { value: 1 - data.todayScore || data.score },
@@ -47,8 +48,7 @@ function ScoreChart({ data }) {
   );
 }
 
-export default ScoreChart;
-
 ScoreChart.propTypes = {
   data: PropTypes.object,
 };
+

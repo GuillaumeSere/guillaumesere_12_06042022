@@ -3,6 +3,7 @@ import {Container, Text} from "../styles/sessionsToolTypeStyle";
 import PropTypes from "prop-types";
 
 export default function SessionsToolType({ active, payload }) {
+    
   if (active) {
     return (
       <Container>

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { Main, Title } from "../styles/errorStyle";
 
 
-const Error = () => {
+export default function Error () {
+    
     return (
         <Main>
             <Title>404</Title>
@@ -12,4 +13,4 @@ const Error = () => {
         </Main>
     )
 }
-export default Error;
+ 

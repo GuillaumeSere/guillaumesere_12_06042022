@@ -11,7 +11,8 @@ import SessionsToolType from "./SessionsToolType.js";
  * @return {JSX}
  */
 
-function UserAverageSessions() {
+ export default function UserAverageSessions() { 
+     
   const [data, setData] = useState([]);
   const { id } = useParams();
 
@@ -20,7 +21,7 @@ function UserAverageSessions() {
       const request = await getData("USER_AVERAGE_SESSIONS",id);
       if (!request) return alert("data error");
       const formatData = request.data.sessions.map((data) => {
-          console.log(data.day)
+          
         switch (data.day) {
           case 1:
             return { ...data, day: "L" };
@@ -50,7 +51,19 @@ function UserAverageSessions() {
     <Container>
       <Title>Durée moyenne des sessions</Title>
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} strokeWidth={1} >
+        <LineChart data={data} strokeWidth={1} 
+             onMouseMove={(e) => {
+                if (e.isTooltipActive === true) {
+                  let div = document.querySelector('.bUPtxZ')
+                  let windowWidth = div.clientWidth
+                  let mouseXpercentage = Math.round(
+                    (e.activeCoordinate.x / windowWidth) * 100
+                  )
+                  // @ts-ignore
+                  div.style.background = `linear-gradient(90deg, rgba(255,0,0,1) ${mouseXpercentage}%, rgba(175,0,0,1.5) ${mouseXpercentage}%, rgba(175,0,0,1.5) 100%)`
+                }
+              }}
+        >
           <XAxis
             type="category"
             dataKey="day"
@@ -78,5 +91,3 @@ function UserAverageSessions() {
     </Container>
   );
 }
-
-export default UserAverageSessions;

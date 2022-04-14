@@ -10,7 +10,8 @@ import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "rec
  * @return {JSX}
  */
 
-function UserPerformance() {
+ export default function UserPerformance() {
+     
     const [data, setData] = useState([]);
 	const {id} = useParams();
 
@@ -19,6 +20,7 @@ function UserPerformance() {
 			const request = await getData("USER_PERFORMANCE",id);
 			if (!request) return alert('data error');
 			const formatData = request.data.data.map((data) => {
+
 				switch (data.kind) {
 					case 1:
 						return { ...data, kind: 'Cardio' };
@@ -54,4 +56,4 @@ function UserPerformance() {
     </Container> );
 }
 
-export default UserPerformance;
+ 

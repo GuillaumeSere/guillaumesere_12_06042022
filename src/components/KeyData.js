@@ -8,7 +8,8 @@ import {Wrapper, Infos, InfosData, InfosText} from "../styles/keyDataStyle";
  * @param  {string} text
  * @return {JSX}
  */
-function KeyData({icon,info,text}) {
+ export default function KeyData({icon,info,text}) {
+     
     return (  
     <Wrapper>
         <img src={icon} alt="calories icon"/>
@@ -19,9 +20,10 @@ function KeyData({icon,info,text}) {
     </Wrapper> );
 }
 
-export default KeyData;
 KeyData.propTypes = {
   icon: PropTypes.any,
   info: PropTypes.string,
   text: PropTypes.string,
 }
+
+ 

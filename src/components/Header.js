@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 
-const Header = () => {
+export default function Header() {
+    
   return (
     <Head>
       <img src={logo} alt="sportSee" aria-label="logo sportSee" />
@@ -18,4 +19,3 @@ const Header = () => {
   );
 };
 
-export default Header;

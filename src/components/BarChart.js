@@ -11,7 +11,7 @@ import ActivityToolType from './ActivityToolType';
  * Render a BarChart with user activity Data
  * @return {JSX}
  */
-function UserActivity() {
+ export default  function UserActivity() {
 
     const [data, setData] = useState([]);
 	const {id} = useParams();
@@ -27,7 +27,8 @@ function UserActivity() {
 	}, [id]);
 	if (data.length === 0) return null;
 	//format data.day
-	for (let i = 0 ; i < data.length ; i ++){data[i].day = i + 1;}
+	for (let i = 0 ; i < data.length ; i ++)
+        {data[i].day = i + 1;}
     
     return (  
         <Wrapper>
@@ -59,4 +60,3 @@ function UserActivity() {
     );
 }
 
-export default UserActivity;

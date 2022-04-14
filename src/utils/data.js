@@ -14,12 +14,12 @@ import axios from "axios";
       console.log(e);
     }
   };
+
   /**
    * Get User Infos
    * @param {string} id
    * @returns {object}
    */
-  
   export const getUserInfos = async (id) => {
     try {
       const res = await axios.get(`http://localhost:3000/user/${id}`);
@@ -34,7 +34,6 @@ import axios from "axios";
    * @param {string} id
    * @returns {object}
    */
-  
   export const getUserPerformance = async (id) => {
     try {
       const res = await axios.get(`http://localhost:3000/user/${id}/performance`);
@@ -43,12 +42,12 @@ import axios from "axios";
       console.log(e);
     }
   };
+
   /**
    * Get User Average Session
    * @param {string} id
    * @returns {object}
    */
-  
   export const getUserAverageSessions = async (id) => {
     try {
       const res = await axios.get(`http://localhost:3000/user/${id}/average-sessions`);

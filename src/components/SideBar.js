@@ -6,7 +6,8 @@ import iconDumbBell from "../assets/iconDumbBell.svg";
 import { NavLink } from "react-router-dom";
 import { Container, Nav, Wrapper, NavText } from "../styles/sideBarStyle";
 
-const SideBar = () => {
+export default function SideBar(){
+    
   return (
     <Container>
       <Nav>
@@ -30,4 +31,3 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;

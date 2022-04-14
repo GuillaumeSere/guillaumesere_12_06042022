@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Main, Title } from "../styles/homeStyle";
 
-const Home = () => {
+export default function Home (){
+    
   return (
     <Main>
       <Title>Select USER</Title>
@@ -12,4 +13,3 @@ const Home = () => {
   );
 };
 
-export default Home;

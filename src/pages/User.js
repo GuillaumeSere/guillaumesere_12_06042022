@@ -18,11 +18,12 @@ import UserPerformance from "../components/UserPerformance";
 /**Render the dashboard
  * @return {JSX}
  */
-const User = () => {
+ export default function User() {
+     
   const [data, setData] = useState([]);
   const { id } = useParams();
+  
   useEffect(() => {
-    console.log(id);
     const getData = async () => {
       const request = await getUserInfos(id);
       if (!request) return alert("data error");
@@ -73,5 +74,3 @@ const User = () => {
     </Main>
   );
 };
-
-export default User;

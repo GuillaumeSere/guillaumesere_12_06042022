@@ -7,7 +7,7 @@ import {Head, Name} from "../styles/userInfosStyle";
 * @return {JSX}
 */
 
-function UserInfos({name}) {
+export default function UserInfos({name}) {
 
     return (  
           <Head>
@@ -16,9 +16,6 @@ function UserInfos({name}) {
           </Head>
     );
 }
-
-export default UserInfos;
-
 
 UserInfos.propTypes = {
 	name: PropTypes.string,
