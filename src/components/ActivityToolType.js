@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
  * @return {JSX}
  */
 
- export default function CustomToolType({active, payload}) {
+ export default function ActivityToolType({active, payload}) {
     if (active){
     return (
         <Container>
@@ -22,7 +22,7 @@ import PropTypes from 'prop-types';
     return null
 }
 
-CustomToolType.propTypes = {
+ActivityToolType.propTypes = {
 	active: PropTypes.bool,
 	payload: PropTypes.array,
 };

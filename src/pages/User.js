@@ -9,7 +9,7 @@ import caloriesIcon from "../assets/calories-icon.svg";
 import proteinsIcon from "../assets/proteines-icon.svg";
 import glucidesIcon from "../assets/glucides-icon.svg";
 import lipidesIcon from "../assets/lipides-icon.svg";
-import BarChart from "../components/BarChart";
+import BarCharts from "../components/BarChart";
 import ScoreChart from "../components/ScoreChart";
 import KeyData from "../components/KeyData";
 import UserAverageSessions from "../components/UserAverageSession";
@@ -40,7 +40,7 @@ import UserPerformance from "../components/UserPerformance";
       <UserInfos name={data.userInfos.firstName} />
       <Content>
           <section>
-            <BarChart />
+            <BarCharts />
             <BottomChart>
               <UserAverageSessions />
               <UserPerformance />

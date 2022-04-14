@@ -11,7 +11,7 @@ import ActivityToolType from './ActivityToolType';
  * Render a BarChart with user activity Data
  * @return {JSX}
  */
- export default  function UserActivity() {
+ export default  function BarCharts() {
 
     const [data, setData] = useState([]);
 	const {id} = useParams();
