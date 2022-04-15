@@ -1,7 +1,7 @@
 import React from 'react';
 import {Wrapper, Head, Title, Text, Icon, Legend, Info} from "../styles/barChartStyle";
 import { useState,useEffect } from 'react';
-import { getUserActivity } from "../utils/ApiCall";
+import { ApiCall} from "../utils/ApiCall";
 import { useParams } from 'react-router';
 import {BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip, ResponsiveContainer} from "recharts";
 import ActivityToolType from './ActivityToolType';
@@ -18,7 +18,7 @@ import ActivityToolType from './ActivityToolType';
 
     useEffect(() => {
 		const getData = async () => {
-			const request = await getUserActivity(id);
+			const request = await ApiCall.getUserActivity(id);
 			if (!request) return alert('data error');
 			
 			setData(request.data.sessions);

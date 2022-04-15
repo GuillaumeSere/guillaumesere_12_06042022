@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getUserInfos } from "../utils/ApiCall";
+import { ApiCall } from "../utils/ApiCall";
 import { useParams } from "react-router";
 import SideBar from "../components/SideBar";
 import UserInfos from "../components/UserInfos";
@@ -25,7 +25,7 @@ import UserPerformance from "../components/UserPerformance";
   
   useEffect(() => {
     const getData = async () => {
-      const request = await getUserInfos(id);
+      const request = await ApiCall.getUserInfos(id);
       if (!request) return alert("data error");
       setData(request.data);
     };

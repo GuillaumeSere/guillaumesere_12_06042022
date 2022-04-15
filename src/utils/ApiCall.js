@@ -4,59 +4,51 @@ const api = axios.create({
     baseURL: `http://localhost:3000/`
 });
 
+const ApiCall = {
 
-/**
+    /**
  * Get User activity
  * @param {number} id
  * @returns {object} 
  */
- export const getUserActivity = async (id) => {
-    try {
-      const res = await api.get(`user/${id}/activity`);
-      return res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  };
+     getUserActivity: (id) => {
+        return api.get(`user/${id}/activity`).then(response => {
+            return response.data;
+        })
+    },
 
   /**
    * Get User Infos
    * @param {number} id
    * @returns {object}
    */
-  export const getUserInfos = async (id) => {
-    try {
-      const res = await api.get(`user/${id}`);
-      return res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  };
+    getUserInfos: (id) => {
+        return api.get(`user/${id}`).then(response => {
+            return response.data;
+        })
+    },
   
   /**
    * Get User Performance
    * @param {number} id
    * @returns {object}
    */
-  export const getUserPerformance = async (id) => {
-    try {
-      const res = await api.get(`user/${id}/performance`);
-      return res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  };
+   getUserPerformance: (id) => {
+    return api.get(`user/${id}/performance`).then(response => {
+        return response.data;
+    })
+},
 
   /**
    * Get User Average Session
    * @param {number} id
    * @returns {object}
    */
-  export const getUserAverageSessions = async (id) => {
-    try {
-      const res = await api.get(`user/${id}/average-sessions`);
-      return res.data;
-    } catch (e) {
-      console.log(e);
-    }
-  };
+   getUserAverageSessions: (id) => {
+    return api.get(`user/${id}/average-sessions`).then(response => {
+        return response.data;
+    })
+},
+}
+
+export { ApiCall };
