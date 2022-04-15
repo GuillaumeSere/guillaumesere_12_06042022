@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { Container } from "../styles/userPerformanceStyle";
-import { getUserPerformance } from "../utils/data";
+import { getUserPerformance } from "../utils/ApiCall";
 import { useParams } from 'react-router';
 import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "recharts";
 

@@ -2,12 +2,12 @@ import axios from "axios";
 
 const api = axios.create({
     baseURL: `http://localhost:3000/`
-})
+});
 
 
 /**
  * Get User activity
- * @param {string} id
+ * @param {number} id
  * @returns {object} 
  */
  export const getUserActivity = async (id) => {
@@ -21,7 +21,7 @@ const api = axios.create({
 
   /**
    * Get User Infos
-   * @param {string} id
+   * @param {number} id
    * @returns {object}
    */
   export const getUserInfos = async (id) => {
@@ -35,7 +35,7 @@ const api = axios.create({
   
   /**
    * Get User Performance
-   * @param {string} id
+   * @param {number} id
    * @returns {object}
    */
   export const getUserPerformance = async (id) => {
@@ -49,7 +49,7 @@ const api = axios.create({
 
   /**
    * Get User Average Session
-   * @param {string} id
+   * @param {number} id
    * @returns {object}
    */
   export const getUserAverageSessions = async (id) => {

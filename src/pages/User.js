@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getUserInfos } from "../utils/data";
+import { getUserInfos } from "../utils/ApiCall";
 import { useParams } from "react-router";
 import SideBar from "../components/SideBar";
 import UserInfos from "../components/UserInfos";

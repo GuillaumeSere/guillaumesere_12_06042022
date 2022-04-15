@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Title } from "../styles/userAverageSessionStyle";
-import { getUserAverageSessions } from "../utils/data";
+import { getUserAverageSessions } from "../utils/ApiCall";
 import { useParams } from "react-router";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 import SessionsToolType from "./SessionsToolType.js";
