@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/guillaumesere_12_06042022/static/css/main.0eb8c0fb.css",
-    "main.js": "/guillaumesere_12_06042022/static/js/main.5e73f0c0.js",
+    "main.js": "/guillaumesere_12_06042022/static/js/main.17d18821.js",
     "static/media/logo.svg": "/guillaumesere_12_06042022/static/media/logo.c9828dd88ff4a313b71352f8afdba3aa.svg",
     "static/media/iconSwiming.svg": "/guillaumesere_12_06042022/static/media/iconSwiming.e26dba434236828a108a786d8215cd31.svg",
     "static/media/iconBike.svg": "/guillaumesere_12_06042022/static/media/iconBike.d516c0e89dbb3aaab23afac6a130ca06.svg",
@@ -13,10 +13,10 @@
     "static/media/calories-icon.svg": "/guillaumesere_12_06042022/static/media/calories-icon.5db5a3aff9bd8f441f49792782c8262e.svg",
     "static/media/iconDumbBell.svg": "/guillaumesere_12_06042022/static/media/iconDumbBell.4fe7fb9fe3554121b3d42dcb489eefd0.svg",
     "main.0eb8c0fb.css.map": "/guillaumesere_12_06042022/static/css/main.0eb8c0fb.css.map",
-    "main.5e73f0c0.js.map": "/guillaumesere_12_06042022/static/js/main.5e73f0c0.js.map"
+    "main.17d18821.js.map": "/guillaumesere_12_06042022/static/js/main.17d18821.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb8c0fb.css",
-    "static/js/main.5e73f0c0.js"
+    "static/js/main.17d18821.js"
   ]
 }
