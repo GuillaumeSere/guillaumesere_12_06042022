@@ -54,9 +54,7 @@ const api = axios.create({
 
   export const getUserAverageSessions = async (id) => {
     try {
-      const res = await api.get(
-        `http://localhost:3000/user/${id}/average-sessions`
-      );
+      const res = await api.get(`http://localhost:3000/user/${id}/average-sessions`);
       return res.data;
     } catch (e) {
       console.log(e);

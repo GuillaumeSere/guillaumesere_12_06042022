@@ -1,5 +1,6 @@
 
-import { getUserActivity,getUserAverageSessions, getUserInfos, getUserPerformance, } from "./dataMocked";
+import { getUserActivity,getUserAverageSessions, getUserInfos, getUserPerformance, } from "./ApiCall";
+//import { getUserActivity,getUserAverageSessions, getUserInfos, getUserPerformance, } from "./dataMocked";
 
 
   /**
