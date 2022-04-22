@@ -31,7 +31,7 @@ import PropTypes from "prop-types";
               index === 0 ? (
                 <Cell key={`cell-${index}`} cornerRadius={10} fill="#ff0000" />
               ) : (
-                <Cell key={`cell-${index}`} fill="#FBFBFB" />
+                <Cell key={`cell-${entry}`} fill="#FBFBFB" />
               )
             )}
           </Pie>

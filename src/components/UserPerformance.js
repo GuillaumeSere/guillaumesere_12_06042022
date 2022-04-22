@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import { Container } from "../styles/userPerformanceStyle";
-import { ApiCall } from "../utils/ApiCall";
+import { getData } from '../utils/getData';
 import { useParams } from 'react-router';
 import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "recharts";
 
@@ -16,8 +16,8 @@ import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "rec
 	const {id} = useParams();
 
     useEffect(() => {
-		const getData = async () => {
-			const request = await ApiCall.getUserPerformance(id);
+		const data = async () => {
+			const request = await getData("USER_PERFORMANCE",id);
 			if (!request) return alert('data error');
 			const formatData = request.data.data.map((data) => {
                 
@@ -40,7 +40,7 @@ import {Radar,RadarChart,PolarGrid,PolarAngleAxis,ResponsiveContainer} from "rec
 			});
 			setData(formatData);
 		};
-		getData();
+		data();
 	}, [id]);
 	if (data.length === 0) return null;
 	
