@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { getUserInfos } from "../utils/ApiCall";
+import { getData } from "../utils/getData";
 import { useParams } from "react-router";
 import SideBar from "../components/SideBar";
 import UserInfos from "../components/UserInfos";
@@ -24,12 +24,12 @@ import UserPerformance from "../components/UserPerformance";
   const { id } = useParams();
   
   useEffect(() => {
-    const getData = async () => {
-      const request = await getUserInfos(id);
+    const data = async () => {
+      const request = await getData("USER_MAIN_DATA",id);
       if (!request) return alert("data error");
       setData(request.data);
     };
-    getData();
+    data();
   }, [id]);
   if (data.length === 0) return null;
 

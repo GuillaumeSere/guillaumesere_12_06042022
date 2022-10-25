@@ -271,7 +271,7 @@ const USER_PERFORMANCE = [
  */
  export const getUserInfos = async (id) => {
 	try {
-		const res = USER_MAIN_DATA.find((el) => el.userId == id);
+		const res = USER_MAIN_DATA.find((el) => el.id == id);
 		return {data:res};
 	} catch (e) {
 		console.log(e);
